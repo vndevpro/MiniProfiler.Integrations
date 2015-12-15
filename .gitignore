@@ -154,3 +154,6 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/packages
+/NuGet.MiniProfiler.Integrations/*.bak
+/NuGet.MiniProfiler.Integrations/*.nupkg
