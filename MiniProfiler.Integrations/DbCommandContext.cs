@@ -26,7 +26,10 @@ namespace MiniProfiler.Integrations
             _failedCommands.Clear();
         }
 
-        public string BuildCommands()
+        /// <summary>
+        /// Get all commands have been executed successfully or failed
+        /// </summary>
+        public string GetCommands()
         {
             var sb = new StringBuilder();
 
