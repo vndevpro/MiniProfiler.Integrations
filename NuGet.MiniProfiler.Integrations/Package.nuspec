@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MiniProfiler.Integrations</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <title>MiniProfiler.Integrations</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
@@ -14,11 +14,11 @@
     <summary>
     </summary>
     <language>en-US</language>
-    <projectUrl>https://nuget.org/packages/NuGet.MiniProfiler.Integrations</projectUrl>
+    <projectUrl>https://github.com/vndevpro/MiniProfiler.Integrations</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <copyright>Copyright  2015</copyright>
+    <copyright>Copyright @RabbitSoftware 2015</copyright>
     <dependencies>
         <group targetFramework="net40">
           <dependency id="MiniProfiler" version="3.2.0.157" />
