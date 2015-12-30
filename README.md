@@ -7,7 +7,9 @@ Provide custom IDbProfiler implemenation and some utility methods around MiniPro
 
 using (var connection = SqlConnectionFactory.New(connectionString, CustomDbProfiler.Current))
 {
+
     // DO YOUR WORKS
+    
 }
 
 ### Get commands executed (Success / Fail)
