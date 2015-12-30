@@ -3,6 +3,11 @@ Provide custom IDbProfiler implemenation and some utility methods around MiniPro
 
 # Usage
 
+### Install package via PM
+```
+Install-Package MiniProfiler.Integrations
+```
+
 ### Initialize connection with the custom profiler
 
 ```
