@@ -2,14 +2,16 @@
 <package >
   <metadata>
     <id>MiniProfiler.Integrations</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <title>MiniProfiler.Integrations</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
     <description>
-      Provide custom IDbProfiler implemenation and some utility methods around MiniProfiler components
+      Provide a custom IDbProfiler implemenation that can capture sql command executed against a database and some utility methods around MiniProfiler components.
     </description>
     <releaseNotes>
+      Version 1.2.0
+      - Remove private constructor on CustomDbProfiler, so that it can be instantiate whenever we need or use CustomDbProfiler.Current as well.
     </releaseNotes>
     <summary>
     </summary>
