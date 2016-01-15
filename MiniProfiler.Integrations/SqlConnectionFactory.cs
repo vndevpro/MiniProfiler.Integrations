@@ -6,6 +6,9 @@ namespace MiniProfiler.Integrations
 {
     public static class SqlConnectionFactory
     {
+        /// <summary>
+        /// Creates a ProfiledDbConnection instance and opens it
+        /// </summary>
         public static DbConnection New(string connectionString, IDbProfiler dbProfiler)
         {
             var connection = new ProfiledDbConnection(new SqlConnection(connectionString), dbProfiler);

@@ -14,7 +14,7 @@ namespace MiniProfiler.Integrations
             get { return _profilerContext; }
         }
 
-        private CustomDbProfiler()
+        public CustomDbProfiler()
         {
             _profilerContext = new DbCommandContext();
         }
