@@ -1,20 +1,16 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>MiniProfiler.Integrations</id>
-    <version>2.0.0</version>
-    <title>MiniProfiler.Integrations</title>
+    <id>MiniProfiler.Integrations.MySql</id>
+    <version>1.0.0</version>
+    <title>MiniProfiler.Integrations.MySql</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
     <description>
       Provide a custom IDbProfiler implemenation that can capture sql command executed against a database and some utility methods around MiniProfiler components.
+      This package is dedicated to work with MySQL by providing a factory to initialize MySQL connection
     </description>
     <releaseNotes>
-      Version 2.0.0-B1
-      - The SqlConnectionFactory has been renamed to DbConnectionFactoryHelper. The new method now accepts an instace of IDbConnectionFactory
-      - Default support is for SQL Server database. If your database is MySQL or any other kind, please create an implementation of IDbConnectionFactory.
-      Version 1.2.0
-      - Remove private constructor on CustomDbProfiler, so that it can be instantiate whenever we need or use CustomDbProfiler.Current as well.
     </releaseNotes>
     <summary>
     </summary>
@@ -25,9 +21,9 @@
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
     <copyright>Copyright @RabbitSoftware 2015</copyright>
     <dependencies>
-        <group targetFramework="net40">
-          <dependency id="MiniProfiler" version="3.2.0.157" />
-        </group>
+      <group targetFramework="net40">
+        <dependency id="MiniProfiler.Integrations" version="2.0.0" />
+      </group>
     </dependencies>
     <references></references>
     <tags>MiniProfiler, RabbitSoftware</tags>

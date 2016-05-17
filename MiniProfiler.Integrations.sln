@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.MiniProfiler.Integrations", "NuGet.MiniProfiler.Integrations\NuGet.MiniProfiler.Integrations.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySql", "MiniProfiler.Integrations.MySql\MiniProfiler.Integrations.MySql.csproj", "{EE4C2D76-694A-4886-87CD-253CA06397FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.MiniProfiler.Integrations.MySql", "NuGet.MiniProfiler.Integrations.MySql\NuGet.MiniProfiler.Integrations.MySql.csproj", "{CC264E65-138E-4048-BC31-16CC6125C08E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +22,14 @@ Global
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC264E65-138E-4048-BC31-16CC6125C08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC264E65-138E-4048-BC31-16CC6125C08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC264E65-138E-4048-BC31-16CC6125C08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC264E65-138E-4048-BC31-16CC6125C08E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

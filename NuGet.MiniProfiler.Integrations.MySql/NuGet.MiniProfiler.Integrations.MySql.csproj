@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0451BAEF-DF2E-4B98-8644-94EE9415E389}</ProjectGuid>
+    <ProjectGuid>{CC264E65-138E-4048-BC31-16CC6125C08E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NuGet.MiniProfiler.Integrations</RootNamespace>
-    <AssemblyName>NuGet.MiniProfiler.Integrations</AssemblyName>
+    <RootNamespace>NuGet.MiniProfiler.Integrations.MySql</RootNamespace>
+    <AssemblyName>NuGet.MiniProfiler.Integrations.MySql</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="lib\MiniProfiler.Integrations.MySql.dll.config" />
     <None Include="NuGetPackage.ps1" />
     <None Include="NuGetSetup.ps1" />
     <None Include="NuGet.exe" />
@@ -60,9 +61,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="lib\MiniProfiler.Integrations.dll" />
-    <Content Include="lib\MiniProfiler.Integrations.pdb" />
-    <Content Include="lib\MiniProfiler.Integrations.XML" />
+    <Content Include="lib\MiniProfiler.Integrations.MySql.dll" />
+    <Content Include="lib\MiniProfiler.Integrations.MySql.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
