@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MiniProfiler.Integrations.MySql</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>MiniProfiler.Integrations.MySql</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
@@ -11,6 +11,8 @@
       This package is dedicated to work with MySQL by providing a factory to initialize MySQL connection
     </description>
     <releaseNotes>
+      Version 1.0.1
+      - Signed assembly
     </releaseNotes>
     <summary>
     </summary>
@@ -22,7 +24,7 @@
     <copyright>Copyright @RabbitSoftware 2015</copyright>
     <dependencies>
       <group targetFramework="net40">
-        <dependency id="MiniProfiler.Integrations" version="2.0.0" />
+        <dependency id="MiniProfiler.Integrations" version="2.0.1" />
       </group>
     </dependencies>
     <references></references>
