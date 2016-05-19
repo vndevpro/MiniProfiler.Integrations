@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MiniProfiler.Integrations</id>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <title>MiniProfiler.Integrations</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
@@ -10,6 +10,8 @@
       Provide a custom IDbProfiler implemenation that can capture sql command executed against a database and some utility methods around MiniProfiler components.
     </description>
     <releaseNotes>
+      Version 2.0.1
+      - Signed the assembly
       Version 2.0.0-B1
       - The SqlConnectionFactory has been renamed to DbConnectionFactoryHelper. The new method now accepts an instace of IDbConnectionFactory
       - Default support is for SQL Server database. If your database is MySQL or any other kind, please create an implementation of IDbConnectionFactory.
