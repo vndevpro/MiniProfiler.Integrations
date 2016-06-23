@@ -7,15 +7,17 @@ namespace MiniProfiler.Integrations
 {
     public class DbCommandContext
     {
-        private readonly IList<string> _executedCommands = new List<string>();
-        private readonly IList<string> _failedCommands = new List<string>();
+        public event ReviewCommandTextEventHandler<CommandEventArgs> CommandGetting;
 
-        public IList<string> ExecutedCommands
+        private readonly IList<DbCommandInfo> _executedCommands = new List<DbCommandInfo>();
+        private readonly IList<KeyValuePair<DbCommandInfo, string>> _failedCommands = new List<KeyValuePair<DbCommandInfo, string>>();
+
+        public IList<DbCommandInfo> ExecutedCommands
         {
             get { return _executedCommands; }
         }
 
-        public IList<string> FailedCommands
+        public IList<KeyValuePair<DbCommandInfo, string>> FailedCommands
         {
             get { return _failedCommands; }
         }
@@ -33,12 +35,23 @@ namespace MiniProfiler.Integrations
         {
             var sb = new StringBuilder();
 
-            sb.AppendFormat("ExecutedCommands: {0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, ExecutedCommands.ToArray()));
+            var commandList = ExecutedCommands
+                .Select(x => x.Recreate(OnCommandGetting(x.CommandText)))
+                .Select(x => x.ExtractToText());
+
+            sb.AppendFormat("ExecutedCommands: {0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, commandList));
             sb.AppendLine("--------------");
-            sb.AppendFormat("FailedCommands: {0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, FailedCommands.ToArray()));
+
+            var failedLogs = FailedCommands.Select(x => string.Format("Command: {0}, Error: {1}", x.Key, x.Value));
+            sb.AppendFormat("FailedCommands: {0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, failedLogs));
             sb.AppendLine();
 
             return sb.ToString();
+        }
+
+        private string OnCommandGetting(string commandText)
+        {
+            return (CommandGetting != null) ? CommandGetting(this, new CommandEventArgs(commandText)) : commandText;
         }
     }
 }

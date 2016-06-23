@@ -1,5 +1,6 @@
 using StackExchange.Profiling.Data;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 
@@ -28,7 +29,7 @@ namespace MiniProfiler.Integrations
 
         public void ExecuteFinish(IDbCommand profiledDbCommand, SqlExecuteType executeType, DbDataReader reader)
         {
-            ProfilerContext.ExecutedCommands.Add(profiledDbCommand.ExtractToText());
+            ProfilerContext.ExecutedCommands.Add(profiledDbCommand.ExtractInfo());
         }
 
         public void ExecuteStart(IDbCommand profiledDbCommand, SqlExecuteType executeType)
@@ -42,7 +43,7 @@ namespace MiniProfiler.Integrations
 
         public void OnError(IDbCommand profiledDbCommand, SqlExecuteType executeType, Exception exception)
         {
-            var failedLog = string.Format("Command: {0}, Exception: {1}", profiledDbCommand.ExtractToText(), exception);
+            var failedLog = new KeyValuePair<DbCommandInfo, string>(profiledDbCommand.ExtractInfo(), exception.ToString());
             ProfilerContext.FailedCommands.Add(failedLog);
         }
 

@@ -44,9 +44,12 @@
     <Compile Include="CustomDbProfiler.cs" />
     <Compile Include="DbCommandContext.cs" />
     <Compile Include="DbCommandExtensions.cs" />
+    <Compile Include="DbCommandInfo.cs" />
     <Compile Include="IDbConnectionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DbConnectionFactoryHelper.cs" />
+    <Compile Include="CommandEventArgs.cs" />
+    <Compile Include="ReviewCommandTextEventHandler.cs" />
     <Compile Include="SqlServerDbConnectionFactory.cs" />
   </ItemGroup>
   <ItemGroup>
