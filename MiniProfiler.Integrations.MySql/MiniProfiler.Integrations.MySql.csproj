@@ -35,7 +35,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="MiniProfiler.Integrations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0e789b781a1e1dbb, processorArchitecture=MSIL">
-      <HintPath>..\packages\MiniProfiler.Integrations.2.0.1\lib\MiniProfiler.Integrations.dll</HintPath>
+      <HintPath>..\packages\MiniProfiler.Integrations.2.2.0\lib\MiniProfiler.Integrations.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
