@@ -7,12 +7,19 @@ namespace MiniProfiler.Integrations
 {
     public static class DbCommandExtensions
     {
+        /// <summary>
+        /// Extract information from command to a light object
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
         public static DbCommandInfo ExtractInfo(this IDbCommand command)
         {
             var info = new DbCommandInfo()
             {
                 CommandType = command.CommandType,
-                CommandText = command.CommandText
+                CommandText = command.CommandText,
+                Database = command.Connection.Database,
+                ConnectionString = command.Connection.ConnectionString
             };
 
             foreach (DbParameter parameter in command.Parameters)
@@ -23,12 +30,17 @@ namespace MiniProfiler.Integrations
             return info;
         }
 
+        /// <summary>
+        /// Create new instance with new command text
+        /// </summary>
         public static DbCommandInfo Recreate(this DbCommandInfo commandInfo, string commandText)
         {
             var info = new DbCommandInfo()
             {
+                CommandText = commandText,
                 CommandType = commandInfo.CommandType,
-                CommandText = commandText
+                Database = commandInfo.Database,
+                ConnectionString = commandInfo.ConnectionString
             };
 
             foreach (var parameter in commandInfo.Parameters)
@@ -44,7 +56,8 @@ namespace MiniProfiler.Integrations
             var sb = new StringBuilder();
 
             sb.AppendFormat("CommandType: {0}, CommandText: {1}", commandInfo.CommandType, commandInfo.CommandText);
-
+            sb.AppendLine();
+            sb.AppendFormat("Database: {0}, ConnectionString: {1}", commandInfo.Database, commandInfo.ConnectionString);
             sb.AppendLine();
             sb.AppendLine("Parameters:");
 
