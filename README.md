@@ -11,14 +11,21 @@ Install-Package MiniProfiler.Integrations
 ### Initialize connection with the custom profiler
 
 ```
-using (var connection = SqlConnectionFactory.New(connectionString, CustomDbProfiler.Current))
+var factory = new SqlServerDbConnectionFactory(connectionString);
+using (var connection = DbConnectionFactoryHelper.New(factory, CustomDbProfiler.Current))
 {
-    // DO YOUR WORKS
+    try 
+    {
+        // DO YOUR WORKS
+    }
 }
 ```
 
 ### Get commands executed (Success / Fail)
 
 ```
-string commands = CustomDbProfiler.Current.ProfilerContext.GetCommands()
+finally
+{
+    string commands = CustomDbProfiler.Current.ProfilerContext.GetCommands()
+}
 ```
