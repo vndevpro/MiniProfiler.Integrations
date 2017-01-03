@@ -7,6 +7,10 @@ namespace MiniProfiler.Integrations
     /// </summary>
     public interface IDbConnectionFactory
     {
+        /// <summary>
+        /// Creates a DbConnection object
+        /// </summary>
+        /// <returns></returns>
         DbConnection CreateConnection();
     }
 }
