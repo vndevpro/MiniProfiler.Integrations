@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations", "MiniProfiler.Integrations\MiniProfiler.Integrations.csproj", "{DFFE67EE-B97B-4F6D-BB58-D15146A28883}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.MiniProfiler.Integrations", "NuGet.MiniProfiler.Integrations\NuGet.MiniProfiler.Integrations.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
@@ -8,6 +10,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySql", "MiniProfiler.Integrations.MySql\MiniProfiler.Integrations.MySql.csproj", "{EE4C2D76-694A-4886-87CD-253CA06397FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.MiniProfiler.Integrations.MySql", "NuGet.MiniProfiler.Integrations.MySql\NuGet.MiniProfiler.Integrations.MySql.csproj", "{CC264E65-138E-4048-BC31-16CC6125C08E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97E25597-CC8D-473C-807C-41E396AAD1CA}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
