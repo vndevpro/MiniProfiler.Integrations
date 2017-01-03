@@ -10,6 +10,7 @@ namespace MiniProfiler.Integrations
     {
         private readonly string _connectionString;
 
+        /// <param name="connectionString"></param>
         public SqlServerDbConnectionFactory(string connectionString)
         {
             _connectionString = connectionString;
