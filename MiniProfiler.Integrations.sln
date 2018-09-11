@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97E255
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestApp", "MiniProfiler.Integrations.TestApp\MiniProfiler.Integrations.TestApp.csproj", "{C0959819-94AA-4641-ADC5-D5BD9F18399F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CC264E65-138E-4048-BC31-16CC6125C08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC264E65-138E-4048-BC31-16CC6125C08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC264E65-138E-4048-BC31-16CC6125C08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
