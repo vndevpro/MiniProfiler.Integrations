@@ -35,15 +35,35 @@ namespace MiniProfiler.Integrations
         {
             var sb = new StringBuilder();
 
+            sb.AppendFormat("ExecutedCommands" + Environment.NewLine + "###");
+            sb.Append(GetExecutedCommands());
+
+            sb.AppendLine("--------------");
+            sb.AppendFormat("FailedCommands" + Environment.NewLine + "###");
+            sb.Append(GetFailedCommands());
+
+            return sb.ToString();
+        }
+
+        public string GetExecutedCommands()
+        {
+            var sb = new StringBuilder();
+
             var commandList = ExecutedCommands
                 .Select(x => x.Recreate(OnCommandGetting(x.CommandText)))
                 .Select(x => x.ExtractToText());
 
-            sb.AppendFormat("ExecutedCommands: {0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, commandList));
-            sb.AppendLine("--------------");
+            sb.AppendFormat("{0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, commandList));
+
+            return sb.ToString();
+        }
+
+        public string GetFailedCommands()
+        {
+            var sb = new StringBuilder();
 
             var failedLogs = FailedCommands.Select(x => string.Format("Command: {0}, Error: {1}", x.Key, x.Value));
-            sb.AppendFormat("FailedCommands: {0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, failedLogs));
+            sb.AppendFormat("{0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, failedLogs));
             sb.AppendLine();
 
             return sb.ToString();
