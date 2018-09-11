@@ -35,11 +35,11 @@ namespace MiniProfiler.Integrations
         {
             var sb = new StringBuilder();
 
-            sb.AppendFormat("ExecutedCommands" + Environment.NewLine + "###");
+            sb.AppendFormat("ExecutedCommands" + Environment.NewLine + "###" + Environment.NewLine);
             sb.Append(GetExecutedCommands());
 
             sb.AppendLine("--------------");
-            sb.AppendFormat("FailedCommands" + Environment.NewLine + "###");
+            sb.AppendFormat("FailedCommands" + Environment.NewLine + "###" + Environment.NewLine);
             sb.Append(GetFailedCommands());
 
             return sb.ToString();
