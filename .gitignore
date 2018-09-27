@@ -157,3 +157,4 @@ $RECYCLE.BIN/
 /packages
 /NuGet.MiniProfiler.Integrations/*.bak
 /NuGet.MiniProfiler.Integrations/*.nupkg
+/.vs/MiniProfiler.Integrations/v15/Server/sqlite3
