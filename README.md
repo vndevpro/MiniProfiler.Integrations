@@ -1,5 +1,5 @@
 # MiniProfiler.Integrations
-Provide custom IDbProfiler implemenation and some utility methods around MiniProfiler components
+Provides a custom IDbProfiler implemenation to help you capture all sql commands that have been executed against a database, support SQL Server / MySQL out of the box and you can extend for your own database very easy.
 
 [MiniProfiler.Integrations on NuGet](https://www.nuget.org/packages/MiniProfiler.Integrations/)
 
