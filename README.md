@@ -1,16 +1,18 @@
 # MiniProfiler.Integrations
 Provides a custom IDbProfiler implemenation to help you capture all sql commands that have been executed against a database, support SQL Server / MySQL out of the box and you can extend for your own database very easy.
 
-[MiniProfiler.Integrations on NuGet](https://www.nuget.org/packages/MiniProfiler.Integrations/)
+On NuGet: [MiniProfiler.Integrations](https://www.nuget.org/packages/MiniProfiler.Integrations/) / [MiniProfiler.Integrations.MySQL](https://www.nuget.org/packages/MiniProfiler.Integrations.MySQL/)
 
 # Usage
 
-### Install package via PM
+Setup is in 3 simple steps:
+
+### 1. Install package via PM
 ```
 Install-Package MiniProfiler.Integrations
 ```
 
-### Initialize connection with the custom profiler
+### 2. Initialize connection with the custom profiler
 
 ```
 var profiler = CustomDbProfiler.Current;
@@ -20,7 +22,7 @@ using (var dbConnection = ProfiledDbConnectionFactory.New(new SqlServerDbConnect
 }
 ```
 
-### Get all commands executed (Success / Fail)
+### 3. Get all commands executed (Success / Fail)
 
 ```
 var commands = profiler.GetCommands();
