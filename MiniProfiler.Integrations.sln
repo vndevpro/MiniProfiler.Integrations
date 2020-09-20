@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations", "MiniProfiler.Integrations\MiniProfiler.Integrations.csproj", "{DFFE67EE-B97B-4F6D-BB58-D15146A28883}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.MiniProfiler.Integrations", "NuGet.MiniProfiler.Integrations\NuGet.MiniProfiler.Integrations.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySql", "MiniProfiler.Integrations.MySql\MiniProfiler.Integrations.MySql.csproj", "{EE4C2D76-694A-4886-87CD-253CA06397FC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.MiniProfiler.Integrations.MySql", "NuGet.MiniProfiler.Integrations.MySql\NuGet.MiniProfiler.Integrations.MySql.csproj", "{CC264E65-138E-4048-BC31-16CC6125C08E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97E25597-CC8D-473C-807C-41E396AAD1CA}"
 	ProjectSection(SolutionItems) = preProject
@@ -20,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{97E255
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestApp", "MiniProfiler.Integrations.TestApp\MiniProfiler.Integrations.TestApp.csproj", "{C0959819-94AA-4641-ADC5-D5BD9F18399F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestAppCore", "MiniProfiler.Integrations.TestAppCore\MiniProfiler.Integrations.TestAppCore.csproj", "{B58CC4E3-9E42-405B-87D9-317DCEEE269A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.TestAppCore", "MiniProfiler.Integrations.TestAppCore\MiniProfiler.Integrations.TestAppCore.csproj", "{B58CC4E3-9E42-405B-87D9-317DCEEE269A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +37,6 @@ Global
 		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC264E65-138E-4048-BC31-16CC6125C08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC264E65-138E-4048-BC31-16CC6125C08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC264E65-138E-4048-BC31-16CC6125C08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC264E65-138E-4048-BC31-16CC6125C08E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.ActiveCfg = Release|Any CPU
