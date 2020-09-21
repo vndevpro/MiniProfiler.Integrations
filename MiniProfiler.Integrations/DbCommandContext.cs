@@ -47,26 +47,17 @@ namespace MiniProfiler.Integrations
 
         public string GetExecutedCommands()
         {
-            var sb = new StringBuilder();
-
             var commandList = ExecutedCommands
                 .Select(x => x.Recreate(OnCommandGetting(x.CommandText)))
                 .Select(x => x.ExtractToText());
 
-            sb.AppendFormat("{0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, commandList));
-
-            return sb.ToString();
+            return string.Join(Environment.NewLine + "----" + Environment.NewLine, commandList);
         }
 
         public string GetFailedCommands()
         {
-            var sb = new StringBuilder();
-
             var failedLogs = FailedCommands.Select(x => string.Format("Command: {0}, Error: {1}", x.Key, x.Value));
-            sb.AppendFormat("{0}", string.Join(Environment.NewLine + "----" + Environment.NewLine, failedLogs));
-            sb.AppendLine();
-
-            return sb.ToString();
+            return string.Join(Environment.NewLine + "----" + Environment.NewLine, failedLogs);
         }
 
         private string OnCommandGetting(string commandText)
