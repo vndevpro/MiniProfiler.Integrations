@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MiniProfiler.Integrations")]
-[assembly: AssemblyDescription("Provide custom IDbProfiler implemenation and some utility methods around MiniProfiler components")]
+[assembly: AssemblyTitle("MiniProfiler.Integrations.TestAppPackageNet462")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("RabbitSoftware")]
-[assembly: AssemblyProduct("MiniProfiler.Integrations")]
-[assembly: AssemblyCopyright("Copyright © RabbitSoftware 2015")]
-[assembly: AssemblyTrademark("MiniProfiler.Integrations")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("MiniProfiler.Integrations.TestAppPackageNet462")]
+[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ebe4c646-c34d-460b-aa74-d792f54fe9dc")]
+[assembly: Guid("351e40db-4eda-426e-8749-2e7dd36ad4a5")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,4 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-//[assembly: AssemblyKeyFile(@"..\..\..\BitBucket\SigningKeys\MiniProfiler.snk")]

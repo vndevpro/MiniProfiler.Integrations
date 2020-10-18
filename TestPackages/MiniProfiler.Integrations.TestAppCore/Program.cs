@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace MiniProfiler.Integrations.TestApp
+namespace MiniProfiler.Integrations.TestAppPackageNetStandard20
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace MiniProfiler.Integrations.TestApp
                 dbConnection.Execute("SELECT GETDATE() as ServerTime");
             }
 
-            var commands = profiler.GetCommands();
+            var commands = profiler.GetCommands();            
         }
     }
 }

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MiniProfiler.Integrations.MySql</id>
-    <version>2.5.0</version>
+    <version>2.5.1</version>
     <title>MiniProfiler.Integrations.MySql</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
