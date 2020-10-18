@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace MiniProfiler.Integrations.MySqlTestAppNet462
+namespace MiniProfiler.Integrations.TestAppNetStandard20
 {
     class Program
     {

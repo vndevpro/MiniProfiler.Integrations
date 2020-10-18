@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiniProfiler.Integrations</name>
+    </assembly>
+    <members>
+        <member name="T:MiniProfiler.Integrations.CommandEventArgs">
+            <summary>
+            Argument event for getting command
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.CommandEventArgs.#ctor(System.String)">
+            <summary>
+            Create new argument with a command text
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.CommandEventArgs.CommandText">
+            <summary>
+            Get the command text
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.DbCommandContext.GetCommands">
+            <summary>
+            Get all commands have been executed successfully or failed
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.DbCommandExtensions.ExtractInfo(System.Data.IDbCommand)">
+            <summary>
+            Extract information from command to a light object
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MiniProfiler.Integrations.DbCommandExtensions.Recreate(MiniProfiler.Integrations.DbCommandInfo,System.String)">
+            <summary>
+            Create new instance with new command text
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.DbCommandInfo.#ctor">
+            <summary>
+            Create new object with empty information for all properties
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.DbCommandInfo.CommandType">
+            <summary>
+            Type of command, how the command text is used
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.DbCommandInfo.CommandText">
+            <summary>
+            Command text which is executing
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.DbCommandInfo.Database">
+            <summary>
+            The database inwhich the command will be executed on
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.DbCommandInfo.ConnectionString">
+            <summary>
+            Connection string to open the connection
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.DbCommandInfo.Parameters">
+            <summary>
+            All parameters of the command
+            </summary>
+        </member>
+        <member name="T:MiniProfiler.Integrations.IDbConnectionFactory">
+            <summary>
+            Connection factory interface. An implementation will be created for each kind of database.
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.IDbConnectionFactory.CreateConnection">
+            <summary>
+            Creates a DbConnection object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MiniProfiler.Integrations.ProfiledDbConnectionFactory.New(MiniProfiler.Integrations.IDbConnectionFactory,StackExchange.Profiling.Data.IDbProfiler)">
+            <summary>
+            Creates a ProfiledDbConnection instance and opens it
+            </summary>
+        </member>
+        <member name="T:MiniProfiler.Integrations.SqlServerDbConnectionFactory">
+            <summary>
+            SQL Server connection factory
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.SqlServerDbConnectionFactory.#ctor(System.String)">
+            <param name="connectionString"></param>
+        </member>
+    </members>
+</doc>

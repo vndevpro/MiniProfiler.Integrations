@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MiniProfiler.Integrations</id>
-    <version>2.4.0</version>
+    <version>2.5.0</version>
     <title>MiniProfiler.Integrations</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
@@ -10,6 +10,8 @@
       Provide a custom IDbProfiler implemenation that can capture sql commands executed against a database and some utility methods around MiniProfiler components.
     </description>
     <releaseNotes>
+	  Version 2.5.0
+	  - Support .NetStandard 2.0
 	  Version 2.4.0
 	  - Use new version of MiniProfiler
 	  - Remove usage of StringBuilder on DbCommandContext
@@ -34,10 +36,14 @@
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <copyright>Copyright @RabbitSoftware 2015</copyright>
+    <copyright>Copyright @RabbitSoftware 2020</copyright>
     <dependencies>
         <group targetFramework="net462">
           <dependency id="MiniProfiler" version="4.2.1" />
+        </group>
+		<group targetFramework="netstandard2.0">
+          <dependency id="MiniProfiler.AspNetCore" version="4.2.1" />
+		  <dependency id="System.Data.SqlClient" version="4.8.2" />
         </group>
     </dependencies>
     <references></references>
@@ -45,7 +51,5 @@
   </metadata>
   <files>
     <file src="lib\" target="lib" />
-    <!--<file src="tools\" target="tools" />
-    <file src="content\" target="content" />-->
   </files>
 </package>
