@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using MiniProfiler.Integrations.MySql;
 
 namespace MiniProfiler.Integrations.MySqlTestAppNet462
 {
@@ -6,10 +7,10 @@ namespace MiniProfiler.Integrations.MySqlTestAppNet462
     {
         static void Main(string[] args)
         {
-            const string connectionString = @"Server=.\SqlExpress;Integrated Security=True;";
+            const string connectionString = @"";
 
             var profiler = CustomDbProfiler.Current;
-            using (var dbConnection = ProfiledDbConnectionFactory.New(new SqlServerDbConnectionFactory(connectionString), profiler))
+            using (var dbConnection = ProfiledDbConnectionFactory.New(new MySqlDbConnectionFactory(connectionString), profiler))
             {
                 dbConnection.Execute("SELECT GETDATE() as ServerTime");
             }
