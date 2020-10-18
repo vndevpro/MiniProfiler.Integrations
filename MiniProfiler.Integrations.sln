@@ -3,29 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations", "MiniProfiler.Integrations\MiniProfiler.Integrations.csproj", "{DFFE67EE-B97B-4F6D-BB58-D15146A28883}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySql", "MiniProfiler.Integrations.MySql\MiniProfiler.Integrations.MySql.csproj", "{EE4C2D76-694A-4886-87CD-253CA06397FC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestApp", "MiniProfiler.Integrations.TestApp\MiniProfiler.Integrations.TestApp.csproj", "{C0959819-94AA-4641-ADC5-D5BD9F18399F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.TestAppCore", "MiniProfiler.Integrations.TestAppCore\MiniProfiler.Integrations.TestAppCore.csproj", "{2202771C-2B3F-4FFA-A80C-679EE908DEBD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySqlTestAppNet462", "MiniProfiler.Integrations.MySqlTestAppNet462\MiniProfiler.Integrations.MySqlTestAppNet462.csproj", "{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestPackages", "TestPackages", "{9A21BFF2-FE8D-4879-9B7B-B59F32999B15}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestConsoleApps", "TestConsoleApps", "{F249D380-1F6B-46D7-83DC-95B1A6AE57BC}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations-Migration", "MiniProfiler.Integrations-Migration\MiniProfiler.Integrations-Migration.csproj", "{2CF129E1-6BE4-4470-815C-5A54EAE92266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestAppNetStandard20", "MiniProfiler.Integrations.TestAppNetStandard20\MiniProfiler.Integrations.TestAppNetStandard20.csproj", "{1B396A3B-98F3-47E0-A0CA-20264BE136E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.MySql-Migration", "MiniProfiler.Integrations.MySql-Migration\MiniProfiler.Integrations.MySql-Migration.csproj", "{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySql-Migration", "MiniProfiler.Integrations.MySql-Migration\MiniProfiler.Integrations.MySql-Migration.csproj", "{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApps", "TestApps", "{EBA2ED8B-4F9B-45AD-BE23-2F37664C0460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySqlTestAppNetStandard20", "MiniProfiler.Integrations.MySqlTestAppNetStandard20\MiniProfiler.Integrations.MySqlTestAppNetStandard20.csproj", "{CEA53E56-7916-4732-96AD-D1A681760DA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestAppNet462", "TestApps\MiniProfiler.Integrations.TestAppNet462\MiniProfiler.Integrations.TestAppNet462.csproj", "{768CC778-8631-4DD5-850C-866973D08EE1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migration", "Migration", "{2C87B38F-5FA3-4E17-A727-4E4213ED4F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.TestAppNetStandard20", "TestApps\MiniProfiler.Integrations.TestAppNetStandard20\MiniProfiler.Integrations.TestAppNetStandard20.csproj", "{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestPackages", "TestPackages", "{DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySqlTestAppNet462", "TestPackages\MiniProfiler.Integrations.MySqlTestAppNet462\MiniProfiler.Integrations.MySqlTestAppNet462.csproj", "{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.MySqlTestAppNetStandard20", "TestPackages\MiniProfiler.Integrations.MySqlTestAppNetStandard20\MiniProfiler.Integrations.MySqlTestAppNetStandard20.csproj", "{F0BE042D-594D-43C3-9332-D6C6478526A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestAppPackageNet462", "TestPackages\MiniProfiler.Integrations.TestApp\MiniProfiler.Integrations.TestAppPackageNet462.csproj", "{C0959819-94AA-4641-ADC5-D5BD9F18399F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.TestAppPackageNetStandard20", "TestPackages\MiniProfiler.Integrations.TestAppCore\MiniProfiler.Integrations.TestAppPackageNetStandard20.csproj", "{64B08653-0770-4392-B2DA-66D5C3B973A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,54 +29,49 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DFFE67EE-B97B-4F6D-BB58-D15146A28883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFFE67EE-B97B-4F6D-BB58-D15146A28883}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFFE67EE-B97B-4F6D-BB58-D15146A28883}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFFE67EE-B97B-4F6D-BB58-D15146A28883}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE4C2D76-694A-4886-87CD-253CA06397FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2202771C-2B3F-4FFA-A80C-679EE908DEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2202771C-2B3F-4FFA-A80C-679EE908DEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2202771C-2B3F-4FFA-A80C-679EE908DEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2202771C-2B3F-4FFA-A80C-679EE908DEBD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2CF129E1-6BE4-4470-815C-5A54EAE92266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2CF129E1-6BE4-4470-815C-5A54EAE92266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CF129E1-6BE4-4470-815C-5A54EAE92266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CF129E1-6BE4-4470-815C-5A54EAE92266}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768CC778-8631-4DD5-850C-866973D08EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768CC778-8631-4DD5-850C-866973D08EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768CC778-8631-4DD5-850C-866973D08EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768CC778-8631-4DD5-850C-866973D08EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B08653-0770-4392-B2DA-66D5C3B973A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B08653-0770-4392-B2DA-66D5C3B973A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B08653-0770-4392-B2DA-66D5C3B973A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B08653-0770-4392-B2DA-66D5C3B973A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C0959819-94AA-4641-ADC5-D5BD9F18399F} = {F249D380-1F6B-46D7-83DC-95B1A6AE57BC}
-		{2202771C-2B3F-4FFA-A80C-679EE908DEBD} = {F249D380-1F6B-46D7-83DC-95B1A6AE57BC}
-		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C} = {9A21BFF2-FE8D-4879-9B7B-B59F32999B15}
-		{2CF129E1-6BE4-4470-815C-5A54EAE92266} = {2C87B38F-5FA3-4E17-A727-4E4213ED4F1C}
-		{1B396A3B-98F3-47E0-A0CA-20264BE136E3} = {9A21BFF2-FE8D-4879-9B7B-B59F32999B15}
-		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1} = {2C87B38F-5FA3-4E17-A727-4E4213ED4F1C}
-		{CEA53E56-7916-4732-96AD-D1A681760DA3} = {9A21BFF2-FE8D-4879-9B7B-B59F32999B15}
+		{768CC778-8631-4DD5-850C-866973D08EE1} = {EBA2ED8B-4F9B-45AD-BE23-2F37664C0460}
+		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166} = {EBA2ED8B-4F9B-45AD-BE23-2F37664C0460}
+		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C} = {DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}
+		{F0BE042D-594D-43C3-9332-D6C6478526A7} = {DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}
+		{C0959819-94AA-4641-ADC5-D5BD9F18399F} = {DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}
+		{64B08653-0770-4392-B2DA-66D5C3B973A3} = {DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22558BA5-FE48-4507-B554-2C0712B050B4}

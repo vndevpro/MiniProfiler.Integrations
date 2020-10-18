@@ -4,6 +4,21 @@
         <name>MiniProfiler.Integrations</name>
     </assembly>
     <members>
+        <member name="T:MiniProfiler.Integrations.CommandEventArgs">
+            <summary>
+            Argument event for getting command
+            </summary>
+        </member>
+        <member name="M:MiniProfiler.Integrations.CommandEventArgs.#ctor(System.String)">
+            <summary>
+            Create new argument with a command text
+            </summary>
+        </member>
+        <member name="P:MiniProfiler.Integrations.CommandEventArgs.CommandText">
+            <summary>
+            Get the command text
+            </summary>
+        </member>
         <member name="M:MiniProfiler.Integrations.DbCommandContext.GetCommands">
             <summary>
             Get all commands have been executed successfully or failed
@@ -65,21 +80,6 @@
         <member name="M:MiniProfiler.Integrations.ProfiledDbConnectionFactory.New(MiniProfiler.Integrations.IDbConnectionFactory,StackExchange.Profiling.Data.IDbProfiler)">
             <summary>
             Creates a ProfiledDbConnection instance and opens it
-            </summary>
-        </member>
-        <member name="T:MiniProfiler.Integrations.CommandEventArgs">
-            <summary>
-            Argument event for getting command
-            </summary>
-        </member>
-        <member name="M:MiniProfiler.Integrations.CommandEventArgs.#ctor(System.String)">
-            <summary>
-            Create new argument with a command text
-            </summary>
-        </member>
-        <member name="P:MiniProfiler.Integrations.CommandEventArgs.CommandText">
-            <summary>
-            Get the command text
             </summary>
         </member>
         <member name="T:MiniProfiler.Integrations.SqlServerDbConnectionFactory">

@@ -1,14 +1,11 @@
 ﻿using Dapper;
-using System;
 
-namespace MiniProfiler.Integrations.TestAppCore
+namespace MiniProfiler.Integrations.TestAppPackageNet462
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             const string connectionString = @"Server=.\SqlExpress;Integrated Security=True;";
 
             var profiler = CustomDbProfiler.Current;
@@ -17,7 +14,7 @@ namespace MiniProfiler.Integrations.TestAppCore
                 dbConnection.Execute("SELECT GETDATE() as ServerTime");
             }
 
-            var commands = profiler.GetCommands();            
+            var commands = profiler.GetCommands();
         }
     }
 }
