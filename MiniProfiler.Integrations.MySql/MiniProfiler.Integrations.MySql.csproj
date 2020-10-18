@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
@@ -56,7 +59,7 @@
       <HintPath>..\packages\MiniProfiler.4.2.1\lib\net461\MiniProfiler.dll</HintPath>
     </Reference>
     <Reference Include="MiniProfiler.Integrations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MiniProfiler.Integrations.2.3.1\lib\MiniProfiler.Integrations.dll</HintPath>
+      <HintPath>..\packages\MiniProfiler.Integrations.2.4.0\lib\MiniProfiler.Integrations.dll</HintPath>
     </Reference>
     <Reference Include="MiniProfiler.Shared, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b44f9351044011a3, processorArchitecture=MSIL">
       <HintPath>..\packages\MiniProfiler.Shared.4.2.1\lib\net461\MiniProfiler.Shared.dll</HintPath>
@@ -111,7 +114,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
