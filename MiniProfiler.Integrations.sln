@@ -21,6 +21,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations-M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.TestAppNetStandard20", "MiniProfiler.Integrations.TestAppNetStandard20\MiniProfiler.Integrations.TestAppNetStandard20.csproj", "{1B396A3B-98F3-47E0-A0CA-20264BE136E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySql-Migration", "MiniProfiler.Integrations.MySql-Migration\MiniProfiler.Integrations.MySql-Migration.csproj", "{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniProfiler.Integrations.MySqlTestAppNetStandard20", "MiniProfiler.Integrations.MySqlTestAppNetStandard20\MiniProfiler.Integrations.MySqlTestAppNetStandard20.csproj", "{CEA53E56-7916-4732-96AD-D1A681760DA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migration", "Migration", "{2C87B38F-5FA3-4E17-A727-4E4213ED4F1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +61,14 @@ Global
 		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B396A3B-98F3-47E0-A0CA-20264BE136E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA53E56-7916-4732-96AD-D1A681760DA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,7 +77,10 @@ Global
 		{C0959819-94AA-4641-ADC5-D5BD9F18399F} = {F249D380-1F6B-46D7-83DC-95B1A6AE57BC}
 		{2202771C-2B3F-4FFA-A80C-679EE908DEBD} = {F249D380-1F6B-46D7-83DC-95B1A6AE57BC}
 		{AF9E43DF-A565-4F1E-AA26-9768FF5FD32C} = {9A21BFF2-FE8D-4879-9B7B-B59F32999B15}
+		{2CF129E1-6BE4-4470-815C-5A54EAE92266} = {2C87B38F-5FA3-4E17-A727-4E4213ED4F1C}
 		{1B396A3B-98F3-47E0-A0CA-20264BE136E3} = {9A21BFF2-FE8D-4879-9B7B-B59F32999B15}
+		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1} = {2C87B38F-5FA3-4E17-A727-4E4213ED4F1C}
+		{CEA53E56-7916-4732-96AD-D1A681760DA3} = {9A21BFF2-FE8D-4879-9B7B-B59F32999B15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {22558BA5-FE48-4507-B554-2C0712B050B4}
