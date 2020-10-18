@@ -7,9 +7,10 @@
 
   <ItemGroup>
     <PackageReference Include="dapper" Version="1.50.5" />
-    <PackageReference Include="MiniProfiler" Version="4.2.1" />
-    <PackageReference Include="MiniProfiler.Integrations" Version="2.4.0" />
-    <PackageReference Include="MiniProfiler.Shared" Version="4.0.138" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MiniProfiler.Integrations-Migration\MiniProfiler.Integrations-Migration.csproj" />
   </ItemGroup>
 
 </Project>
