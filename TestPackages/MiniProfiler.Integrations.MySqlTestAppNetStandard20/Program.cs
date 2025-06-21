@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using MiniProfiler.Integrations.MySql;
+using System;
 
 namespace MiniProfiler.Integrations.MySqlTestAppNetStandard20
 {
@@ -7,15 +8,18 @@ namespace MiniProfiler.Integrations.MySqlTestAppNetStandard20
     {
         static void Main(string[] args)
         {
-            const string connectionString = @"";
+            const string connectionString = @"Server= 192.168.1.6;Database=mysql;Uid=root;Pwd=Pass@word1;";
 
             var profiler = CustomDbProfiler.Current;
             using (var dbConnection = ProfiledDbConnectionFactory.New(new MySqlDbConnectionFactory(connectionString), profiler))
             {
-                dbConnection.Execute("SELECT GETDATE() as ServerTime");
+                dbConnection.Execute("SELECT NOW() as MySqlServerTime");
             }
 
             var commands = profiler.GetCommands();
+
+            Console.WriteLine("Executed Commands: {0}", commands);
+            Console.ReadLine();
         }
     }
 }

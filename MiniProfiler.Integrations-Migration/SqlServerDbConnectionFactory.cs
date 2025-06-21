@@ -1,5 +1,5 @@
+using Microsoft.Data.SqlClient;
 using System.Data.Common;
-using System.Data.SqlClient;
 
 namespace MiniProfiler.Integrations
 {
