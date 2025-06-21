@@ -158,3 +158,11 @@ $RECYCLE.BIN/
 /NuGet.MiniProfiler.Integrations/*.bak
 /NuGet.MiniProfiler.Integrations/*.nupkg
 /.vs/MiniProfiler.Integrations/v15/Server/sqlite3
+/.vs/MiniProfiler.Integrations/v17
+/.vs/ProjectEvaluation
+/.vs/MiniProfiler.Integrations/FileContentIndex
+/.vs/MiniProfiler.Integrations/DesignTimeBuild
+/.vs/MiniProfiler.Integrations/CopilotIndices/17.13.444.19527
+/TestPackages/MiniProfiler.Integrations.MySqlTestAppNet462/.vs
+/TestPackages/MiniProfiler.Integrations.TestApp/.vs
+/.vs/MiniProfiler.Integrations/CopilotIndices/17.14.827.52834
