@@ -1,21 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12324.101 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations", "MiniProfiler.Integrations-Migration\MiniProfiler.Integrations.csproj", "{2CF129E1-6BE4-4470-815C-5A54EAE92266}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.MySql", "MiniProfiler.Integrations.MySql-Migration\MiniProfiler.Integrations.MySql.csproj", "{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestApps", "TestApps", "{EBA2ED8B-4F9B-45AD-BE23-2F37664C0460}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.TestAppNetStandard20", "TestApps\MiniProfiler.Integrations.TestAppNetStandard20\MiniProfiler.Integrations.TestAppNetStandard20.csproj", "{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestPackages", "TestPackages", "{DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.MySqlTestAppNetStandard20", "TestPackages\MiniProfiler.Integrations.MySqlTestAppNetStandard20\MiniProfiler.Integrations.MySqlTestAppNetStandard20.csproj", "{F0BE042D-594D-43C3-9332-D6C6478526A7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniProfiler.Integrations.TestAppPackageNetStandard20", "TestPackages\MiniProfiler.Integrations.TestAppCore\MiniProfiler.Integrations.TestAppPackageNetStandard20.csproj", "{64B08653-0770-4392-B2DA-66D5C3B973A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59E86F84-C905-414F-A1F7-6F69F5888CE8}"
+	ProjectSection(SolutionItems) = preProject
+		Notes.txt = Notes.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +33,6 @@ Global
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0B94A0-DAB2-4F3D-854F-BB2067312CB1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0BE042D-594D-43C3-9332-D6C6478526A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,7 +46,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{542D2AA8-9E10-4BAD-9CCF-3718ACD00166} = {EBA2ED8B-4F9B-45AD-BE23-2F37664C0460}
 		{F0BE042D-594D-43C3-9332-D6C6478526A7} = {DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}
 		{64B08653-0770-4392-B2DA-66D5C3B973A3} = {DE2ABE02-ADD1-463F-BC67-D959ADE1F0A0}
 	EndGlobalSection

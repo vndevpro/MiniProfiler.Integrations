@@ -4,6 +4,7 @@
     <TargetFrameworks></TargetFrameworks>
     <RootNamespace>MiniProfiler.Integrations</RootNamespace>
     <AssemblyName>MiniProfiler.Integrations</AssemblyName>
+    <Description>Provides a MiniProfiler IDbProfiler implementation that records successful and failed database commands, including command text, parameters, database and connection details, and errors. Includes a SQL Server connection factory and supports custom providers through IDbConnectionFactory.</Description>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 

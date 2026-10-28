@@ -1,0 +1,9 @@
+Create package:
+
+dotnet pack .\MiniProfiler.Integrations-Migration\MiniProfiler.Integrations.csproj -c Release -p:Version=2.26.100 -p:AssemblyVersion=2.26.0 -o .\artifacts -v normal
+dotnet pack .\MiniProfiler.Integrations.MySql-Migration\MiniProfiler.Integrations.MySql.csproj -c Release -p:Version=2.26.100 -p:AssemblyVersion=2.26.0 -o .\artifacts -v normal
+
+Push the package:
+
+dotnet nuget push .\artifacts\MiniProfiler.Integrations.2.26.100.nupkg --api-key <API_KEY> --source https://api.nuget.org/v3/index.json
+dotnet nuget push .\artifacts\MiniProfiler.Integrations.MySql.2.26.100.nupkg --api-key <API_KEY> --source https://api.nuget.org/v3/index.json

@@ -167,3 +167,6 @@ $RECYCLE.BIN/
 /TestPackages/MiniProfiler.Integrations.TestApp/.vs
 /.vs/MiniProfiler.Integrations/CopilotIndices/17.14.827.52834
 /.vs/MiniProfiler.Integrations/v18
+/.vs/MiniProfiler.Integrations
+/artifacts
+/.vs/CopilotSnapshots/44D058E84B40E743B73A1F5F099EA160

@@ -4,6 +4,7 @@
     <TargetFrameworks></TargetFrameworks>
     <RootNamespace>MiniProfiler.Integrations.MySql</RootNamespace>
     <AssemblyName>MiniProfiler.Integrations.MySql</AssemblyName>
+    <Description>Adds MySQL support to MiniProfiler.Integrations through MySql.Data, with a connection factory for profiling database commands and recording failures.</Description>
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 

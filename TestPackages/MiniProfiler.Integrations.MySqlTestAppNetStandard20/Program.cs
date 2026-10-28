@@ -8,12 +8,15 @@ namespace MiniProfiler.Integrations.MySqlTestAppNetStandard20
     {
         static void Main(string[] args)
         {
-            const string connectionString = @"Server= 192.168.1.6;Database=mysql;Uid=root;Pwd=Pass@word1;";
+            var mysqlServiceUri = Environment.GetEnvironmentVariable("DEV_MySQL_ServiceUri", EnvironmentVariableTarget.User);
+            var connectionString = MySqlConnectionStringHelper.ParseServiceUri(mysqlServiceUri);
 
             var profiler = CustomDbProfiler.Current;
             using (var dbConnection = ProfiledDbConnectionFactory.New(new MySqlDbConnectionFactory(connectionString), profiler))
             {
                 dbConnection.Execute("SELECT NOW() as MySqlServerTime");
+                dbConnection.TryExecute("SELECT * FROM Users");
+                dbConnection.TryExecute("SELECT COUNT(*) FROM Users");
             }
 
             var commands = profiler.GetCommands();

@@ -49,20 +49,22 @@ namespace MiniProfiler.Integrations
         {
             var commandList = ExecutedCommands
                 .Select(x => x.Recreate(OnCommandGetting(x.CommandText)))
-                .Select(x => x.ExtractToText());
+                .Select((x, i) => x.ExtractToText(i));
 
             return string.Join(Environment.NewLine + "----" + Environment.NewLine, commandList);
         }
 
         public string GetFailedCommands()
         {
-            var failedLogs = FailedCommands.Select(x => string.Format("Command: {0}, Error: {1}", x.Key, x.Value));
+            var failedLogs = FailedCommands.Select((x, i) => string.Format($"Index: {i}, Command: {x.Key}, Error: {x.Value}"));
             return string.Join(Environment.NewLine + "----" + Environment.NewLine, failedLogs);
         }
 
         private string OnCommandGetting(string commandText)
         {
-            return (CommandGetting != null) ? CommandGetting(this, new CommandEventArgs(commandText)) : commandText;
+            return (CommandGetting != null)
+                ? CommandGetting(this, new CommandEventArgs(commandText))
+                : commandText;
         }
     }
 }

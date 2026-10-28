@@ -51,10 +51,11 @@ namespace MiniProfiler.Integrations
             return info;
         }
 
-        public static string ExtractToText(this DbCommandInfo commandInfo)
+        public static string ExtractToText(this DbCommandInfo commandInfo, int index)
         {
             var sb = new StringBuilder();
 
+            sb.AppendLine($"Index: {index}");
             sb.AppendFormat("CommandType: {0}, CommandText: {1}", commandInfo.CommandType, commandInfo.CommandText);
             sb.AppendLine();
             sb.AppendFormat("Database: {0}, ConnectionString: {1}", commandInfo.Database, commandInfo.ConnectionString);

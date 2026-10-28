@@ -1,5 +1,5 @@
 # MiniProfiler.Integrations
-Provides a custom IDbProfiler implemenation to help you capture all sql commands that have been executed against a database, support SQL Server / MySQL out of the box and you can extend for your own database very easy.
+`MiniProfiler.Integrations` provides a custom `IDbProfiler` implementation that records successfully executed and failed database commands, including command text, parameters, database and connection details, and errors. The core package includes a SQL Server connection factory. Install `MiniProfiler.Integrations.MySql` for MySQL support, or implement `IDbConnectionFactory` to integrate another provider.
 
 On NuGet: [MiniProfiler.Integrations](https://www.nuget.org/packages/MiniProfiler.Integrations/) / [MiniProfiler.Integrations.MySQL](https://www.nuget.org/packages/MiniProfiler.Integrations.MySQL/)
 
